@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header1 {
+    background-color: rgb(29, 114, 29);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.heading1 {
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.links .link {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    background-color: blueviolet;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: cornflowerblue;
+    color: yellowgreen;
+}
+
+/* Hero */
+.hero_page {
+    height: 100vh;
+    background: url(bg_image.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.herotext h2 {
+    font-size: 2.5rem;
+}
+
+.herotext h1 {
+    font-size: 3rem;
+}
+
+.herotext p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.btn1 {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: darkred;
+}
+
+/* About */
+.about {
+    background: url(./computer_image.jpeg) no-repeat center center/cover;
+    height: auto;
+    padding: 50px 20px;
+    color: white;
+}
+
+.ab_h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, rgb(0, 166, 255), rgb(255, 242, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.about_text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Services and Projects */
+.background, .projects {
+    padding: 60px 20px;
+    background: linear-gradient(red, blue, green);
+    color: white;
+    height: 90vh;
+}
+
+.ui {
+    text-align: center;
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, rgb(195, 0, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+}
+
+.services_container, .projects_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.box:hover {
+    background-image: linear-gradient(to right, rgb(30, 0, 255), rgb(154, 154, 185));
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    padding: 60px 20px;
+    background-color: #222;
+    color: white;
+    display: flex;
+}
+
+.contact_form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_form input,
+.contact_form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .herotext {
+        font-size: 1.2rem;
+    }
+
+    .heading1 {
+        font-size: 2rem;
+    }
+
+    .nav1 {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 10px;
+    }
+
+    .services_container,
+    .projects_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+.background{
+    height: 80vh;
+}
+.intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+/* Full height footer and center content */
+#contact-footer {
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.footer-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Title */
+.footer-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.footer-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: white;
+    color: #1f1f1f;
+}
+
+/* Footer note */
+.footer-note {
+    font-size: 0.9em;
+    color: #888888;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .footer-title {
+        font-size: 2em;
+    }
+
+    .footer-subtitle {
+        font-size: 1em;
+    }
+
+    .social-link {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
