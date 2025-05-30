@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -31,6 +32,11 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .links .link {
@@ -91,7 +97,6 @@ body {
 /* About */
 .about {
     background: url(./images/computer_image.jpeg) no-repeat center center/cover;
-    height: auto;
     padding: 50px 20px;
     color: white;
 }
@@ -120,7 +125,6 @@ body {
     padding: 60px 20px;
     background: linear-gradient(red, blue, green);
     color: white;
-    height: 90vh;
 }
 
 .ui {
@@ -145,153 +149,105 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     width: 250px;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.box:hover {
-    background-image: linear-gradient(to right, rgb(30, 0, 255), rgb(154, 154, 185));
-    transform: scale(1.05);
+    text-align: center;
 }
 
 /* Contact */
 .contact {
     padding: 60px 20px;
-    background-color: #222;
+    height: 100vh;
+    background-color: #333;
     color: white;
-    display: flex;
 }
 
 .contact_form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    float: left;
+    margin-left: 100px;
+}
+.map{
+    float: right;
 }
 
 .contact_form input,
 .contact_form textarea {
     padding: 10px;
+    border-radius: 6px;
     border: none;
-    border-radius: 5px;
     font-size: 1rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .herotext {
-        font-size: 1.2rem;
-    }
+.map-container {
+    max-width: 100%;
+    margin-top: 20px;
+}
 
-    .heading1 {
-        font-size: 2rem;
-    }
+/* Footer */
+footer{
+    clear: both;
+}
+#contact-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
 
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    background-color: #666;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .nav1 {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .links {
-        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .services_container,
-    .projects_container {
-        flex-direction: column;
-        align-items: center;
+    .links .link {
+        margin: 5px 0;
     }
 
     .box {
         width: 90%;
     }
-}
-.background{
-    height: 80vh;
-}
-.intro {
-    font-size: 1.2rem;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-}
-/* Full height footer and center content */
-#contact-footer {
-    height: 100vh;
-    background-color: #1f1f1f;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
 
-/* Container */
-.footer-container {
-    max-width: 800px;
-    width: 100%;
-}
-
-/* Title */
-.footer-title {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-/* Subtitle */
-.footer-subtitle {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #bbbbbb;
-}
-
-/* Social links */
-.social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.social-link {
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background-color: white;
-    color: #1f1f1f;
-}
-
-/* Footer note */
-.footer-note {
-    font-size: 0.9em;
-    color: #888888;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-    .footer-title {
-        font-size: 2em;
-    }
-
-    .footer-subtitle {
-        font-size: 1em;
-    }
-
-    .social-link {
-        font-size: 0.9em;
-        padding: 8px 16px;
+    .hero_page h1 {
+        font-size: 2rem;
     }
 }
-
-
-
-
